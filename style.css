@@ -1,0 +1,169 @@
+body{
+font-family: Arial;
+background:linear-gradient(120deg,#0d47a1,#1976d2);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.atm{
+background:white;
+padding:30px;
+border-radius:15px;
+width:320px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+input{
+padding:10px;
+margin:10px;
+width:80%;
+}
+
+button{
+padding:10px 15px;
+margin:5px;
+border:none;
+background:#0d47a1;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1976d2;
+}
+.card-container{
+perspective:1000px;
+width:320px;
+margin:30px auto;
+}
+
+.atm-card{
+width:320px;
+height:180px;
+position:relative;
+transform-style:preserve-3d;
+animation:float 4s ease-in-out infinite;
+transition:transform 0.8s;
+}
+
+.card-container:hover .atm-card{
+transform:rotateY(180deg);
+}
+
+.card-front, .card-back{
+position:absolute;
+width:100%;
+height:100%;
+border-radius:15px;
+padding:20px;
+box-sizing:border-box;
+backface-visibility:hidden;
+}
+
+.card-front{
+background:linear-gradient(120deg,#000,#333);
+color:#d8b4ff;
+}
+
+.card-back{
+background:linear-gradient(120deg,#222,#000);
+transform:rotateY(180deg);
+color:white;
+}
+
+.chip{
+width:45px;
+height:30px;
+background:gold;
+border-radius:5px;
+margin-bottom:20px;
+}
+
+.visa{
+position:absolute;
+bottom:20px;
+right:20px;
+font-size:22px;
+}
+
+.strip{
+background:black;
+height:40px;
+margin-top:20px;
+}
+
+.cvv{
+margin-top:30px;
+text-align:right;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0px);}
+}
+.card-container{
+perspective:1000px;
+width:320px;
+margin:40px auto;
+}
+
+.atm-card{
+width:320px;
+height:190px;
+position:relative;
+transform-style:preserve-3d;
+transition:transform 0.8s;
+}
+
+.card-container:hover .atm-card{
+transform:rotateY(180deg);
+}
+
+.card-front,
+.card-back{
+position:absolute;
+width:100%;
+height:100%;
+border-radius:20px;
+padding:20px;
+backface-visibility:hidden;
+}
+
+.card-front{
+background:linear-gradient(135deg,#000,#2d2d2d);
+color:#e0c3ff;
+}
+
+.card-back{
+background:linear-gradient(135deg,#1a1a1a,#000);
+transform:rotateY(180deg);
+}
+
+.strip{
+background:black;
+height:40px;
+margin-top:20px;
+}
+
+.cvv{
+text-align:right;
+margin-top:40px;
+}
+.atm-title{
+position: absolute;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+font-size:28px;
+font-weight:bold;
+color:beige;
+}
+body{
+background:
+linear-gradient(120deg,#56ab2f,#a8e063);
+}

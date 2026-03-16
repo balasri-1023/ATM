@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mini Bank ATM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1 class="atm-title">Mini ATM Bank</h1>
+<div class="atm">
+<div class="card-container">
+
+<div class="atm-card">
+
+<div class="card-front">
+<div class="chip"></div>
+<h2>Mini Bank</h2>
+<p class="holder">CARD HOLDER</p>
+<p class="visa">VISA</p>
+</div>
+
+<div class="card-back">
+<div class="strip"></div>
+<p class="cvv">CVV 123</p>
+</div>
+
+</div>
+
+</div>
+<h2>Enter ATM PIN</h2>
+
+<div id="login">
+<input type="password" id="pin" placeholder="Enter PIN">
+<button onclick="login()">Login</button>
+</div>
+
+<div id="menu" style="display:none">
+
+<input type="number" id="amount" placeholder="Enter Amount">
+
+<div class="buttons">
+<button onclick="deposit()">Deposit</button>
+<button onclick="withdraw()">Withdraw</button>
+<button onclick="checkBalance()">Check Balance</button>
+</div>
+
+<h3 id="balance">Balance : ₹1000</h3>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
