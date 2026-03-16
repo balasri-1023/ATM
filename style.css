@@ -168,34 +168,48 @@ background:
 linear-gradient(120deg,#56ab2f,#a8e063);
 }
 .card{
-width:100%;
-height:auto;
+width:90%;
+max-width: 300px;
+height:160px;
+margin: auto;
 border-radius:15px;
 }
 .login-box{
 width:100%;
 padding:20px;
 }
+.container{
+width:90%;
+max-width:350px;
+margin:auto;
+padding:15px;
+}
+.atm-title{
+font-size:24px;
+text-align:center;
+margin-top:15px;
+}
+button{
+padding:10px 14px;
+font-size:14px;
+margin:5px;
+}
 @media (max-width:600px){
+
+.card{
+height:140px;
+}
 
 .atm-title{
 font-size:22px;
-margin-top:15px;
-}
-
-.card{
-height:160px;
-}
-
-.login-box{
-padding:15px;
-}
-
-input{
-width:100%;
 }
 
 button{
+width:100%;
+margin:6px 0;
+}
+
+input{
 width:100%;
 }
 
